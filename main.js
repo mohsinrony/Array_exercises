@@ -48,6 +48,6 @@ console.log(numbers);
 // Task 11
 // Find the largest and smallest value from the numbers array using sort() function.
 // Print those values.
-const largest = Math.max(numbers);
-const smallest = Math.min(numbers);
-document.querySelector("#task11").textContent = "Largest value: " + largest + "Smalllest value: " + smallest;
+numbers.sort((a,b) => b - a)
+document.getElementById('task11').textContent =
+    `Largest: ${numbers[0]} Smallest: ${numbers[numbers.length -1]}`;
